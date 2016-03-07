@@ -3,10 +3,12 @@ package oop_bookmart;
 public class Faculty extends Member{
 
 	public double memberFee = 9.99;
-	
+
 	Faculty(int memberID, String memberFName, String memberMidIni, String memberLName,
 			String memberEmail, String memberPasswd)
 	{
+		borrowLimit = 4;
+		borrowing = 0;
 		super(memberID, memberFName, memberMidIni, memberLName, memberEmail, memberPasswd);
 		super.setMemberFee(memberFee);
 	}
