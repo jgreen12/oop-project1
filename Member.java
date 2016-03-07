@@ -9,6 +9,8 @@ public abstract class Member {
 	private String memberEmail;
 	private String memberPasswd;
 	private double memberFee;
+	protected int borrowLimit;
+	protected int borrowing;
 	
 	/*
 	public Member()
