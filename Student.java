@@ -7,6 +7,8 @@ public class Student extends Member{
 	Student(int memberID, String memberFName, String memberMidIni, String memberLName,
 			String memberEmail, String memberPasswd)
 	{
+		borrowLimit = 1;
+		borrowing = 0;
 		super(memberID, memberFName, memberMidIni, memberLName, memberEmail, memberPasswd);
 		super.setMemberFee(memberFee);
 	}
